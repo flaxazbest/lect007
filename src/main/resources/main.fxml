@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TableView fx:id="table" layoutX="34.0" layoutY="14.0" prefHeight="281.0" prefWidth="271.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="40.0" text="Id" />
+          <TableColumn fx:id="product" prefWidth="150.0" text="Product" />
+            <TableColumn fx:id="count" minWidth="50.0" prefWidth="70.0" text="Count" />
+        </columns>
+      </TableView>
+      <TextField fx:id="prod" layoutX="34.0" layoutY="315.0" />
+      <TextField fx:id="number" layoutX="34.0" layoutY="364.0" />
+      <Label layoutX="135.0" layoutY="298.0" prefHeight="17.0" prefWidth="48.0" text="Product" />
+      <Label layoutX="148.0" layoutY="347.0" text="Count" />
+      <Button onAction="#add" layoutX="193.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Add" />
+   </children>
+</AnchorPane>
